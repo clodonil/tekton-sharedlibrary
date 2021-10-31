@@ -1,0 +1,1 @@
+buildah push $(inputs.params.IMAGE)
