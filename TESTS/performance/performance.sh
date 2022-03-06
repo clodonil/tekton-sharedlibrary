@@ -1,3 +1,3 @@
 #!/bin/bash
 set -x
-k6 run $(workspaces.sharedlibrary.path)/TESTS/performance/test.js
+k6 run /workspace/sharedlibrary/TESTS/performance/test.js
