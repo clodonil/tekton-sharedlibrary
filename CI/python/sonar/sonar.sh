@@ -12,7 +12,6 @@ unzip -o $HOME/.sonar/sonar-scanner.zip -d $HOME/.sonar/
 export PATH=$SONAR_SCANNER_HOME/bin:$PATH
 export SONAR_SCANNER_OPTS="-server"
 
-SONAR_TOKEN='e2fd9312a36a9ec063e6a200e1b9a8a9a2fb5e74'
 
 sonar-scanner \
   -Dsonar.organization=microservice-api \
