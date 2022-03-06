@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: __app__-deployment
+  namespace: apps
   labels:
     app: __app__
 spec:
@@ -18,4 +19,4 @@ spec:
       - name: __app__
         image: __image__
         ports:
-           - containerPort: 8080
+          - containerPort: 8080
