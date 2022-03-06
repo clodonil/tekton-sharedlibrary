@@ -3,7 +3,7 @@
 echo "Executando Sonar"
 
 apt-get update 
-apt-get install -y curl
+apt-get install -y curl unzip
 
 export SONAR_SCANNER_VERSION=4.7.0.2747
 export SONAR_SCANNER_HOME=$HOME/.sonar/sonar-scanner-$SONAR_SCANNER_VERSION-linux
