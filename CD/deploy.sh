@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -x
 #apt-get update
 #apt-get install -y apt-transport-https ca-certificates curl
