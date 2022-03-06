@@ -1,3 +1,4 @@
 #!/bin/bash
 set -x
-k6 run test.js
+curl localhost
+k6 run $(workspaces.sharedlibrary.path)/TESTS/performance/test.js
