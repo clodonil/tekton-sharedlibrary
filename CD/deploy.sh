@@ -7,8 +7,8 @@ set -x
 #apt-get update
 #apt-get install -y kubectl
 cp /workspace/sharedlibrary/CD/deploy.yaml .
-echo $APP-IMAGE
-echo $APP-NAME
+echo ${APP-IMAGE}
+echo ${APP-NAME}
 
 sed -i -e "s;__image__;$APP-IMAGE;g" deploy.yaml
 sed -i -e "s;__app__;$APP-NAME;g" deploy.yaml
