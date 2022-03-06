@@ -10,7 +10,7 @@ cp /workspace/sharedlibrary/CD/deploy.yaml .
 APPIMAGE=$1
 APPNAME=$2
 
-sed -i -e "s;__image__;$(APPIMAGE);g" deploy.yaml
-sed -i -e "s;__app__;$(APPNAME);g" deploy.yaml
+sed -i -e "s;__image__;$APPIMAGE;g" deploy.yaml
+sed -i -e "s;__app__;$APPNAME;g" deploy.yaml
 cat deploy.yaml
 kubectl apply -f deploy.yaml 
