@@ -21,4 +21,4 @@ sonar-scanner \
   -Dsonar.sourceEncoding=UTF-8 \
   -Dsonar.dynamicAnalysis=reuseReports \
   -Dsonar.core.codeCoveragePlugin=cobertura \
-  -Dsonar.python.coverage.reportPaths=coverage.xml 
+  -Dsonar.python.coverage.reportPaths=/coverage/coverage.xml 
