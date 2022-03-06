@@ -1,4 +1,2 @@
 #!/bin/bash
-apt-get update
-apt-get install curl -y
-curl localhost:8080
+k6 run test.js
