@@ -12,9 +12,13 @@ unzip -o $HOME/.sonar/sonar-scanner.zip -d $HOME/.sonar/
 export PATH=$SONAR_SCANNER_HOME/bin:$PATH
 export SONAR_SCANNER_OPTS="-server"
 
-
 sonar-scanner \
   -Dsonar.organization=microservice-api \
   -Dsonar.projectKey=python-api \
   -Dsonar.sources=. \
-  -Dsonar.host.url=https://sonarcloud.io
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.language=python \
+  -Dsonar.sourceEncoding=UTF-8 \
+  -Dsonar.dynamicAnalysis=reuseReports \
+  -Dsonar.core.codeCoveragePlugin=cobertura \
+  -Dsonar.python.coverage.reportPaths=coverage.xml 

@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 pip install pytest
+pip install pytest-cov
 pip install coverage
-pytest
+pytest --cov=app tests/ --cov-report=xml
 coverage report -m pytest
+
 
