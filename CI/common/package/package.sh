@@ -1,2 +1,9 @@
 #!/usr/bin/env bash
-buildah bud --tag=$(inputs.params.IMAGE) .
+set -x
+appname=$1
+tagimage=$2
+registry='clodonil'
+name="$registry/$appname)"
+buildah bud --tag="$name:latest" .
+buildah tag "$name:latest" "$name:$tagimage"
+buildah images
