@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
+ls -l 
+ls -l /
 pip install pylint
-ls
 pylint .  --exit-zero
 
