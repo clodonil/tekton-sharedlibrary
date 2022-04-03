@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Executando Sonar"
+appname=$1
 
 apt-get update 
 apt-get install -y curl unzip
@@ -14,7 +15,7 @@ export SONAR_SCANNER_OPTS="-server"
 
 sonar-scanner \
   -Dsonar.organization=microservice-api \
-  -Dsonar.projectKey=python-api \
+  -Dsonar.projectKey=$appname \
   -Dsonar.sources=. \
   -Dsonar.host.url=https://sonarcloud.io \
   -Dsonar.language=python \
