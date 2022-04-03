@@ -1,10 +1,11 @@
 #!/bin/bash
 
 set -x
-registry='clodonil'
+
 appname=$1
 tagimage=$2
 result=$3
+registry=$4
 name="$registry/$appname"
 image="$name:$tagimage"
 buildah images
