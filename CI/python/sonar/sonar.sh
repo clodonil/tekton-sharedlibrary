@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -x 
 echo "Executando Sonar"
 appname=$1
 
