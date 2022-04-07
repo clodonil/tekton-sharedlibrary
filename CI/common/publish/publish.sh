@@ -13,4 +13,4 @@ buildah push "$name:latest"
 buildah push $image
 EXIT=$?
 printf "%s" "${image}" > $result
-echo $EXIT
+echo -n $EXIT > /tekton/results/last-exit-code
