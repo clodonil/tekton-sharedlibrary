@@ -18,7 +18,7 @@ else
   export SONAR_SCANNER_OPTS="-server"
   
   sonar-scanner \
-    -Dsonar.organization=microservice-api \
+    -Dsonar.organization=$appname \
     -Dsonar.projectKey=$appname \
     -Dsonar.sources=. \
     -Dsonar.host.url=https://sonarcloud.io \
