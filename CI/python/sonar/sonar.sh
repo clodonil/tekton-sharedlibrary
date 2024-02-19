@@ -27,3 +27,4 @@ else
     -Dsonar.dynamicAnalysis=reuseReports \
     -Dsonar.core.codeCoveragePlugin=cobertura \
     -Dsonar.python.coverage.reportPaths=/coverage/coverage.xml 
+fi
